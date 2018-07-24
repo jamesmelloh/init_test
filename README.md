@@ -1,2 +1,2 @@
-# init_test
+# inittest
 Inital jenkins testing
