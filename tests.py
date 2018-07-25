@@ -1,8 +1,11 @@
 # tests.py
 import sys
 import os
-# jenkins exposes the workspace directory through env.
-sys.path.append(os.environ['WORKSPACE']) 
+try:
+    print('JENKINS_WORKSPACE' + os.environ.get('JENKINS_HOME'))
+except KeyError:
+    print('KeyError')
+
 import pytest
 import random
 try:
