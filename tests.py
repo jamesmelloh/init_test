@@ -2,7 +2,7 @@
 import sys
 import os
 # jenkins exposes the workspace directory through env.
-sys.path.append(os.environ['WORKSPACE'])
+sys.path.append(os.environ['WORKSPACE'] + /usr/lib/python3/dist-packages/pytest.py)
 import pytest
 import random
 try:
