@@ -17,6 +17,6 @@ class SimpleTest(unittest.TestCase):
     def test_fail(self):
         self.assertEqual(11, 7 + 3)# tests.py
  
-if __name__ == '__main__': # terse output
-    unittest.main()
+suite = unittest.TestLoader().loadTestsFromTestCase(SimpleTest)
+unittest.TextTestRunner(verbosity=2).run(suite)
     
