@@ -13,7 +13,7 @@ try:
 except ImportError:
     import unittest
 
-class SimpleTest(unittest.TestCase):
+#class SimpleTest(unittest.TestCase):
     @unittest.skip("demonstrating skipping")
     def test_skipped(self):
         self.fail("shouldn't happen")
@@ -23,7 +23,6 @@ class SimpleTest(unittest.TestCase):
 
     def test_fail(self):
         self.assertEqual(11, 7 + 3)# tests.py
- 
+
 suite = unittest.TestLoader().loadTestsFromTestCase(SimpleTest)
 unittest.TextTestRunner(verbosity=2).run(suite)
-    
