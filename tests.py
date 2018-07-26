@@ -1,19 +1,19 @@
 # tests.py
 import sys
-import os
+#import os
 try:
     print('JENKINS_WORKSPACE' + os.environ.get('JENKINS_HOME'))
 except KeyError:
     print('KeyError')
 
-import pytest
+#import pytest
 import random
 try:
     import unittest2 as unittest
 except ImportError:
     import unittest
 
-#class SimpleTest(unittest.TestCase):
+class SimpleTest(unittest.TestCase):
     @unittest.skip("demonstrating skipping")
     def test_skipped(self):
         self.fail("shouldn't happen")
