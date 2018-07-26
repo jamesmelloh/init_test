@@ -7,4 +7,4 @@
   * ex_results.xml
   * git repository
   * SCM triggered by commit and/or push
- 
+  check
